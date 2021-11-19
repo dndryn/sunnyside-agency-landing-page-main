@@ -1,0 +1,88 @@
+@use '../utilities/colors.scss' as col;
+@use '../utilities/functions.scss' as fun;
+
+//footer
+$footer-background: col.$RegularCyan;
+//info
+$title-color__info: col.$DarkModerateCyan;
+$title-size__info: fun.pxToRem(26px);
+$links-color__info: col.$DarkModerateCyan;
+$links-size__info: fun.pxToRem(16px);
+$socials-color__info: col.$DarkModerateCyan;
+$socials-size__info: fun.pxToRem(26px);
+
+
+$width-container__footer: fun.pxToRem(375px);
+$height-container__footer: fun.pxToRem(350px);
+
+$width-content__footer: fun.pxToRem(295px);
+$height-content__footer: fun.pxToRem(206px);
+
+footer {
+    background-color: $footer-background;
+    display: fixed;
+    height: 348px;
+    bottom: 0px;
+}
+
+svg.info__title > path {
+        fill: col.$DarkModerateCyan;
+    }
+.info__socials svg > path {
+        fill: col.$DarkModerateCyan;
+    }
+.info__socials svg > path:hover {
+        fill: col.$White;
+    }
+
+.info {
+    margin: auto auto;
+    text-align: center;
+    
+    &__title {
+        font-size: $title-size__info;
+        color: $title-color__info;
+    }
+    &__links {
+        width: 295px;
+        :hover {
+            color: col.$White;
+        }
+        
+    }
+    &__links a {
+        font-size: $links-size__info;
+        color: $links-color__info;
+    }
+    &__socials {
+        min-width: 164px;
+        font-size: $socials-size__info;
+        color: $socials-color__info;
+    }
+}
+
+.container {
+    &__footer {
+        width: $width-container__footer;
+        height: $height-container__footer;
+    }
+    &__info {
+        height: 97px;
+    }
+}
+
+.content {
+    &__footer {
+        width: $width-content__footer;
+        height: $height-content__footer;
+    }
+}
+
+
+// $att: ("title", "links", "socials");
+
+// @each $name in $att {
+//     .info__{$name}-color__info {
+//         color: col.$DarkModerateCyan;
+//     }
+// }

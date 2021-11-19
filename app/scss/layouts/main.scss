@@ -1,0 +1,52 @@
+@use '../utilities/colors.scss' as col;
+@use '../utilities/functions.scss' as fun;
+
+$title-size: fun.pxToRem(34px);
+$title-color: col.$White;
+$hero-background: col.$BrightCyan;
+
+main {
+    background: inherit;
+}
+
+.hero {
+    background-color: $hero-background;
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+    &__svg { // removed img for css background
+
+        width: 20%;
+        height: 45%;
+        object-fit: contain;
+    }
+    &__title {
+        text-align: center;
+        letter-spacing: 11px;
+        font-size: $title-size;
+        color: $title-color;
+    }
+
+}
+
+.container {
+    &__hero {
+        position: relative;
+        height:fun.pxToRem(538px);
+    }
+}
+
+$width-content__hero: fun.pxToRem(303px);
+$height-content__hero: fun.pxToRem(250px);
+
+.content {
+     &__hero {
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 30%;
+        width: $width-content__hero;
+        height: $height-content__hero;
+    }
+}

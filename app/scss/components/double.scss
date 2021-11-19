@@ -1,0 +1,54 @@
+@use '../utilities/colors.scss' as col;
+@use '../utilities/functions.scss' as fun;
+//double
+$title-size--main: fun.pxToRem(32px);
+$title-color--main: col.$VeryDarkDesaturatedBlue;
+$paragraph-size--main: fun.pxToRem(16px);
+$paragraph-color--main: col.$DarkGrayishBlue;
+$link-size--main: fun.pxToRem(16px);
+$link-color--main: col.$VeryDarkDesaturatedBlue;
+
+// content/container
+$width-content__card: fun.pxToRem(306px);
+$height-content__card: fun.pxToRem(302px);
+
+$width-container__card: fun.pxToRem(375px);
+$height-container__card: fun.pxToRem(437px);
+
+.double {
+    text-align: center;
+    &__image {
+        width: 100%; // to change
+        height: 100%;
+        &::before {
+            color: black;
+        }
+    }
+    &__title {
+        font-size: $title-size--main;
+        color: $title-color--main;
+    }
+    &__paragraph {
+        font-size: $paragraph-size--main;
+        color: $paragraph-color--main;
+        line-height: 160%;
+    }
+    &__link {
+        font-size: $link-size--main;
+        color: $link-color--main;
+        letter-spacing: 1px;
+    }
+}
+
+.container {
+     &__card {
+        width: $width-container__card;
+        height: $height-container__card;
+    }
+}
+.content {
+        &__card {
+        width: $width-content__card;
+        height: $height-content__card;
+    }
+}

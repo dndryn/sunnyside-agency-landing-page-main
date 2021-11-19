@@ -1,0 +1,118 @@
+@use '../utilities/colors.scss' as col;
+@use '../utilities/functions.scss' as fun;
+
+// //double
+// $title-size--main: fun.pxToRem(32px);
+// $title-color--main: col.$VeryDarkDesaturatedBlue;
+// $paragraph-size--main: fun.pxToRem(16px);
+// $paragraph-color--main: col.$DarkGrayishBlue;
+// $link-size--main: fun.pxToRem(16px);
+// $link-color--main: col.$VeryDarkDesaturatedBlue;
+
+// //inner
+// $title-size--inner: fun.pxToRem(32px);
+// $paragraph-size--inner: fun.pxToRem(16px);
+// $title-color--inner-gd: col.$DarkDesaturatedCyan;
+// $paragraph-color--inner-gd: col.$DarkDesaturatedCyan;
+
+// $title-color--inner-ph: col.$DarkBlue;
+// $paragraph-color--inner-ph: col.$DarkBlue;
+
+//clients
+// $title-size__clients: fun.pxToRem(16px);
+// $paragraph-size--clients: fun.pxToRem(18px);
+// $paragraph-color--clients: col.$VeryDarkGrayishBlue;
+// $name-size--clients: fun.pxToRem(24px);
+// $name-color--clients: black;
+// $occ-size--clients: fun.pxToRem(16px);
+// $occ-color--clients: col.$GrayishBlue;
+
+// .double {
+//     text-align: center;
+//     &__image {
+//         width: 100%; // to change
+//         &::before {
+//             color: black;
+//         }
+//     }
+//     &__title {
+//         font-size: $title-size--main;
+//         color: $title-color--main;
+//     }
+//     &__paragraph {
+//         font-size: $paragraph-size--main;
+//         color: $paragraph-color--main;
+//         line-height: 160%;
+//     }
+//     &__link {
+//         font-size: $link-size--main;
+//         color: $link-color--main;
+//         letter-spacing: 1px;
+//     }
+// }
+
+// .inner {
+//     // Serve un selettore per differenziare il colore di due
+//     // tipi di carte: $DarkBlue, $DarkDesaturatedCyan
+
+//     &--graphic-design {
+//         &__image {
+//             width: 100%; // to change
+//         }
+//         &__title {
+//             font-size: $title-size--inner;
+//             color: $title-color--inner-gd;
+//         }
+//         &__paragraph {
+//             font-size: $paragraph-size--inner;
+//             color: $paragraph-color--inner-gd;
+//             line-height: fun.pxToRem(26px);
+//         }
+//     }
+
+//     &--photograpy {
+//         &__image {
+//             width: 100%; // to change
+//         }
+//         &__title {
+//             font-size: $title-size--inner;
+//             color: $title-color--inner-ph;
+//         }
+//         &__paragraph {
+//             font-size: $paragraph-size--inner;
+//             color: $paragraph-color--inner-ph;
+//             line-height: fun.pxToRem(26px);
+//         }
+//     }
+// }
+
+// .clients {
+//     margin: 0 0 67px 0;
+//     text-align: center;
+
+//     &__title {
+//         text-align: center;
+//         font-size: $title-size__clients;
+//         color: col.$GrayishBlue;
+//         letter-spacing: 6px;
+//         //margin: calc(fun.pxToRem(148px) / 2);
+//     }
+
+//     &__image {
+//         width: 50px;
+//         border-radius: 100%;
+//         align-self: center;
+//     }
+//     &__paragraph {
+//         font-size: $paragraph-size--clients;
+//         color: $paragraph-color--clients;
+//     }
+//     &__name {
+//         font-size: $name-size--clients;
+//         color: $name-color--clients;
+//     }
+//     &__occ {
+//         font-size: $occ-size--clients;
+//         color: $occ-color--clients;
+//     }
+// }

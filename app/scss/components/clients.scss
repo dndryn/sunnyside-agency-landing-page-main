@@ -1,0 +1,74 @@
+@use '../utilities/colors.scss' as col;
+@use '../utilities/functions.scss' as fun;
+
+$title-size__clients: fun.pxToRem(16px);
+$paragraph-size--clients: fun.pxToRem(18px);
+$paragraph-color--clients: col.$VeryDarkGrayishBlue;
+$name-size--clients: fun.pxToRem(24px);
+$name-color--clients: black;
+$occ-size--clients: fun.pxToRem(16px);
+$occ-color--clients: col.$GrayishBlue;
+
+$width-container__clients: fun.pxToRem(375px);
+$height-container__clients: fun.pxToRem(350px);
+
+$width-content__clients: fun.pxToRem(318px);
+$height-content__clients: fun.pxToRem(316px);
+
+.clients {
+    text-align: center;
+
+    &__title {
+        text-align: center;
+        font-size: $title-size__clients;
+        color: col.$GrayishBlue;
+        letter-spacing: 6px;
+        //margin: calc(fun.pxToRem(148px) / 2);
+    }
+    &__image {
+        width: 50px;
+        border-radius: 100%;
+        align-self: center;
+    }
+    &__paragraph {
+        font-size: $paragraph-size--clients;
+        color: $paragraph-color--clients;
+    }
+    &__name {
+        font-size: $name-size--clients;
+        color: $name-color--clients;
+    }
+    &__occ {
+        font-size: $occ-size--clients;
+        color: $occ-color--clients;
+    }
+}
+
+.container {
+    &__clients {
+        width: $width-container__clients;
+        height: auto;//$height-container__clients;
+        margin-bottom: fun.pxToRem(96px);
+        &__cards {
+            background-color: inherit;
+            gap: fun.pxToRem(68px);
+        }
+    }
+}
+
+.content {
+    &__clients {
+        width: $width-content__clients;
+        height: auto;//$height-content__clients;
+        gap: 40px;
+        &__info {
+            width: inherit;
+            height: auto;
+            gap: fun.pxToRem(16px); // to try: percentage
+        }
+        &__title {
+            width: 100%;
+            height: fun.pxToRem(148px);
+        }
+    }
+}

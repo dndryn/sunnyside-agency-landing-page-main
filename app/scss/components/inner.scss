@@ -1,0 +1,70 @@
+@use '../utilities/colors.scss' as col;
+@use '../utilities/functions.scss' as fun;
+
+//inner
+$title-size--inner: fun.pxToRem(32px);
+$paragraph-size--inner: fun.pxToRem(16px);
+$title-color--inner-gd: col.$DarkDesaturatedCyan;
+$paragraph-color--inner-gd: col.$DarkDesaturatedCyan;
+
+$title-color--inner-ph: col.$DarkBlue;
+$paragraph-color--inner-ph: col.$DarkBlue;
+
+$width-content__inner: fun.pxToRem(325px);
+$height-content__inner: fun.pxToRem(145px);
+
+.inner {
+    height: fun.pxToRem(600px);
+    // Serve un selettore per differenziare il colore di due
+    // tipi di carte: $DarkBlue, $DarkDesaturatedCyan
+
+    &--graphic-design {
+        &__image {
+            width: 100%; // to change
+        }
+        &__title {
+            font-size: $title-size--inner;
+            color: $title-color--inner-gd;
+        }
+        &__paragraph {
+            font-size: $paragraph-size--inner;
+            color: $paragraph-color--inner-gd;
+            line-height: fun.pxToRem(26px);
+        }
+    }
+
+    &--photograpy {
+        &__image {
+            width: 100%; // to change
+        }
+        &__title {
+            font-size: $title-size--inner;
+            color: $title-color--inner-ph;
+        }
+        &__paragraph {
+            font-size: $paragraph-size--inner;
+            color: $paragraph-color--inner-ph;
+            line-height: fun.pxToRem(26px);
+        }
+    }
+}
+
+.content {
+    &__inner {
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 10%;
+        width: $width-content__inner;
+        height: $height-content__inner;
+
+        &--plus {
+            height: calc($height-content__inner + 23px);
+        }
+    }
+}
+
+.container {
+    &__inner{
+        height: auto;
+    }
+}

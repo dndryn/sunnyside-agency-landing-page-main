@@ -1,0 +1,27 @@
+@use '../utilities/colors.scss' as col;
+@use '../utilities/functions.scss' as fun;
+@use '../utilities/variables.scss' as var;
+
+// local variables
+$nav-logo: col.$White; // <-- colors.scss
+$logo-size: fun.pxToRem(24px); // <-- variables.scss
+
+.navbar {
+
+    &__logo {
+        font-size: $logo-size;
+        text-decoration: none;
+        color: $nav-logo;
+        mix-blend-mode: difference;
+    }
+}
+
+$width-container__nav: fun.pxToRem(327px);
+$height-container__nav: fun.pxToRem(24px);
+
+.content {
+    &__nav {
+        width: $width-container__nav;
+        height: $height-container__nav;
+    }
+}

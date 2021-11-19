@@ -1,0 +1,57 @@
+@use '../utilities/colors.scss' as col;
+@use '../utilities/functions.scss' as fun;
+
+$menu-width__container: fun.pxToRem(329px);
+$menu-height__container: fun.pxToRem(305px);
+
+$menu__link-size: fun.pxToRem(18px);
+$menu__link-color: col.$GrayishBlue;
+
+$menu__button-size: fun.pxToRem(18px);
+$menu__button-background: col.$Yellow;
+$menu__button-color: col.$VeryDarkDesaturatedBlue;
+
+.menu {
+    display: none;
+    z-index: 2000;
+    background-color: col.$White;
+    width: $menu-width__container;
+    height: $menu-height__container;
+
+    &__link {
+        font-size: $menu__link-size;
+        color: $menu__link-color;
+    }
+
+    &__button {
+        width: 140px;
+        height: 56px;
+        border-radius: 28px;
+        border-color:transparent;
+        font-size: $menu__button-size;
+        background-color: $menu__button-background;
+        color: $menu__button-color;
+
+        :hover {
+            background-color: green;
+        }
+        :active {
+            opacity: 0;
+        }
+    }
+}
+
+.container {
+    &__menu {
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    }
+}
+
+.content {
+    &__menu {
+        width: 240px;
+        height: 220px;
+    }
+}

@@ -1,0 +1,28 @@
+@use './functions.scss' as fun;
+
+
+// 640px, 1024px, 1400px
+$breakpoints-up: (
+                "medium": "rem(640)", 
+                "large": "rem(1024)", 
+                "xlarge": "rem(1400)"
+                );
+
+// 639px, 1023px, 1399px
+$breakpoints-down: (
+                "small": "rem(639)", 
+                "medium": "rem(1023)", 
+                "large": "rem(1399)"
+                );
+
+@mixin breakpoint-up($size){
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content; 
+    }
+}
+
+@mixin breakpoint-down($size){
+    @media (max-width: map-get($breakpoints-down, $size)) {
+        @content; 
+    }
+}

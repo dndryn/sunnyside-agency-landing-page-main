@@ -1,0 +1,8 @@
+@use './variables.scss' as var;
+@use "sass:math";
+
+
+// Px to Rem 
+@function pxToRem($pxValue) {
+    @return math.div($pxValue, 18px) * 1rem; 
+}

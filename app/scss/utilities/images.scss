@@ -1,0 +1,24 @@
+
+.img {
+    background-position: center bottom;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    overflow: hidden hidden;
+
+    &--hr {
+        background-image: url('/images/mobile/image-header.jpg');
+        background-size: contain;
+        background-color: red;//$hero-background;
+        background-repeat: no-repeat;
+        background-position: center bottom ;
+        background-size: 60vw auto;
+    }
+
+    &--gr_ds {
+        background-image: url('/images/mobile/image-graphic-design.jpg');
+    }
+    &--ph {
+        background-image: url('/images/mobile/image-photography.jpg');
+    }
+
+}

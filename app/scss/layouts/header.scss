@@ -1,0 +1,19 @@
+@use '../utilities/functions.scss' as fun;
+
+header {
+    width: 100vw;
+    background-color: none;
+    position: fixed;
+    top: 0px;
+    z-index: 1999;
+}
+
+$width-container__header: fun.pxToRem(375px);
+$height-container__header: fun.pxToRem(86px);
+
+.container {
+    &__header {
+        width: $width-container__header;
+        height: $height-container__header;
+    }
+}

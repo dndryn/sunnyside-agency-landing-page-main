@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 18px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+
+.container {
+    //border: solid 1px blue;
+}
+
+.content {
+    margin: auto auto auto auto;
+    text-align: center;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+.fixed {
+    position: fixed;
+}
+
+.flex {
+    display: flex;
+    &__center { // -> container-clients, container-card
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    &__between {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items:baseline;
+    }
+
+    &__column {
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    &--cl {
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+    }
+
+    &--rw {
+        flex-flow: row nowrap;
+    }
+}
+
+.ground {
+    background-color: green;
+}
