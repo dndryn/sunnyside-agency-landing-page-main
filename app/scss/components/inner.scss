@@ -14,13 +14,19 @@ $width-content__inner: fun.pxToRem(325px);
 $height-content__inner: fun.pxToRem(145px);
 
 .inner {
-    height: fun.pxToRem(600px);
+    overflow-y: hidden;
+    height: 100vh;//fun.pxToRem(600px);
     // Serve un selettore per differenziare il colore di due
     // tipi di carte: $DarkBlue, $DarkDesaturatedCyan
 
     &--graphic-design {
         &__image {
             width: 100%; // to change
+            position: relative;
+            // left: 50%;
+            // transform: translate(-50%, 0);
+            bottom: 0px;
+            
         }
         &__title {
             font-size: $title-size--inner;
@@ -36,6 +42,8 @@ $height-content__inner: fun.pxToRem(145px);
     &--photograpy {
         &__image {
             width: 100%; // to change
+            position: relative;
+            bottom: 0px;
         }
         &__title {
             font-size: $title-size--inner;
@@ -65,6 +73,6 @@ $height-content__inner: fun.pxToRem(145px);
 
 .container {
     &__inner{
-        height: auto;
+        height: inherit;
     }
 }

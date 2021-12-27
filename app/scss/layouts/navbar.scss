@@ -5,7 +5,7 @@
 // local variables
 $nav-logo: col.$White; // <-- colors.scss
 $logo-size: fun.pxToRem(24px); // <-- variables.scss
-
+$width-const__nav: 87.2%;//89.6%;
 .navbar {
 
     &__logo {
@@ -21,7 +21,8 @@ $height-container__nav: fun.pxToRem(24px);
 
 .content {
     &__nav {
-        width: $width-container__nav;
+        min-width: $width-container__nav; 
+        width: $width-const__nav;//89%
         height: $height-container__nav;
     }
 }

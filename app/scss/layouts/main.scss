@@ -1,7 +1,10 @@
 @use '../utilities/colors.scss' as col;
 @use '../utilities/functions.scss' as fun;
+@use '../utilities/mixins.scss' as mix;
+
 
 $title-size: fun.pxToRem(34px);
+$title-size__const: 9.06vw;
 $title-color: col.$White;
 $hero-background: col.$BrightCyan;
 
@@ -14,19 +17,27 @@ main {
 
     &__img {
         width: 100%;
-        height: auto;
+        // object-fit:cover;
+        // object-position: center bottom;
+        // height: auto;
+        position:absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 0;
     }
     &__svg { // removed img for css background
-
         width: 20%;
         height: 45%;
         object-fit: contain;
     }
     &__title {
         text-align: center;
-        letter-spacing: 11px;
-        font-size: $title-size;
+        letter-spacing: 2.93vw;//11px;
+        font-size:$title-size__const;
         color: $title-color;
+        @include mix.breakpoint-up(medium) {
+            color: red;
+        }
     }
 
 }
@@ -34,19 +45,23 @@ main {
 .container {
     &__hero {
         position: relative;
-        height:fun.pxToRem(538px);
+        width: 100vw;
+        overflow-y: hidden;
+        height: 100vh;//fun.pxToRem(538px);
     }
 }
 
 $width-content__hero: fun.pxToRem(303px);
 $height-content__hero: fun.pxToRem(250px);
+$width-content__hero-const: 80.8%;
+$height-content__hero-const: 46.5%; //66.6vw;
 
 .content {
      &__hero {
         left: 50%;
         transform: translate(-50%, 0);
         top: 30%;
-        width: $width-content__hero;
-        height: $height-content__hero;
+        width: $width-content__hero-const;//$width-content__hero;
+        height: $height-content__hero-const;
     }
 }

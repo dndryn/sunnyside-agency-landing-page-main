@@ -1,4 +1,8 @@
+@use '../utilities/colors.scss' as col;
+@use '../utilities/functions.scss' as fun;
+
 body {
-    width: 375px;
+    min-width: fun.pxToRem(375px);//375px;
+    max-width: fun.pxToRem(1440px);
     overflow-x: hidden;
 }

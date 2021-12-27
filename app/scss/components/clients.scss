@@ -46,7 +46,7 @@ $height-content__clients: fun.pxToRem(316px);
 
 .container {
     &__clients {
-        width: $width-container__clients;
+        width: 100%;//$width-container__clients;
         height: auto;//$height-container__clients;
         margin-bottom: fun.pxToRem(96px);
         &__cards {

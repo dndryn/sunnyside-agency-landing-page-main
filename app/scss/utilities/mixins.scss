@@ -1,16 +1,16 @@
 @use './functions.scss' as fun;
 
 
-// 640px, 1024px, 1400px
+// 540px, 1024px, 1400px
 $breakpoints-up: (
-                "medium": "rem(640)", 
+                "medium": "fun.pxToRem(540px)", 
                 "large": "rem(1024)", 
                 "xlarge": "rem(1400)"
                 );
 
-// 639px, 1023px, 1399px
+// 539px, 1023px, 1399px
 $breakpoints-down: (
-                "small": "rem(639)", 
+                "small": "rem(539)", 
                 "medium": "rem(1023)", 
                 "large": "rem(1399)"
                 );
