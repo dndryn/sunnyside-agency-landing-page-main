@@ -63,8 +63,8 @@ svg.info__title > path {
 
 .container {
     &__footer {
-        width: 100vw;//$width-container__footer;
-        height: $height-container__footer;
+       // width: 100vw; to fix or remove.
+        height: $height-container__footer; 
     }
     &__info {
         height: 97px;
