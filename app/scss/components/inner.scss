@@ -15,9 +15,11 @@ $height-content__inner: fun.pxToRem(145px);
 
 .inner {
     overflow-y: hidden;
-    height: 100vh;//fun.pxToRem(600px);
+    height: 100vh; 
+    
     // Serve un selettore per differenziare il colore di due
     // tipi di carte: $DarkBlue, $DarkDesaturatedCyan
+    background-color: black;
 
     &--graphic-design {
         &__image {
@@ -26,7 +28,8 @@ $height-content__inner: fun.pxToRem(145px);
             // left: 50%;
             // transform: translate(-50%, 0);
             bottom: 0px;
-            
+            height: 100vh;
+            object-fit: cover;
         }
         &__title {
             font-size: $title-size--inner;
@@ -42,8 +45,10 @@ $height-content__inner: fun.pxToRem(145px);
     &--photograpy {
         &__image {
             width: 100%; // to change
+            height: 100vh;
             position: relative;
             bottom: 0px;
+            object-fit: cover;
         }
         &__title {
             font-size: $title-size--inner;
