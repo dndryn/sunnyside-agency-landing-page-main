@@ -34,7 +34,12 @@ svg.info__title > path {
 .info__socials svg > path:hover {
         fill: col.$White;
     }
-
+.shows {
+    width: 100%;
+    &__pic {
+        width: 50%;
+    }
+}
 .info {
     margin: auto auto;
     text-align: center;
