@@ -2,7 +2,9 @@
 @use '../utilities/functions.scss' as fun;
 
 body {
-    min-width: fun.pxToRem(375px);//375px;
-    max-width: fun.pxToRem(1440px);
+    height: auto;
+    min-width: fun.pxToRem(375px); //375px;
+    max-width: fun.pxToRem(1440px); //1440px
     overflow-x: hidden;
+    overflow-y: scroll;
 }

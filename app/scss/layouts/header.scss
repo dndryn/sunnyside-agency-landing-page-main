@@ -4,7 +4,7 @@ header {
     background-color: none;
     position: fixed;
     top: 0px;
-    z-index: 1999;
+    z-index: 3;
 }
 
 $width-container__header: fun.pxToRem(375px);

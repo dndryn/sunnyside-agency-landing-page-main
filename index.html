@@ -12,21 +12,25 @@
   rel="stylesheet" crossorigin="anonymous">
   <!-- style -->
   <link href="./dist/style.css" rel="stylesheet">
-
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 </head>
 <body>
+  <div id="overlay" class="overlay overlay__hidden"></div>
   <header class="container__header flex flex__center">
     <!-- navbar -->
     <nav class="navbar content__nav flex flex__between">
       <a href="#"class="navbar__logo regular regular--logo">sunnyside</a>
-      <a href="#" title="menu"><img src="./images/icon-hamburger.svg" alt=""></a>
+      <a href="#" id="toggle" class="toggle toggle--closed" title="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
     </nav>
     <!-- -- -->
   </header>
   <main>
     <!-- menu -->
-    <div class="menu container__menu fixed flex flex__center">
+    <div id="menu" class="menu menu--hidden fixed flex flex__center">
       <div class="content__menu flex flex__column">
         <a class="menu__link regular" href="#">About</a>
         <a class="menu__link regular" href="#">Services</a>
@@ -227,5 +231,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer noopener">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  <script async src="app/js/script.js"></script>
 </body>
 </html>

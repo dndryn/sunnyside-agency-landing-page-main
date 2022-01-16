@@ -29,6 +29,8 @@ main {
         width: 20%;
         height: 45%;
         object-fit: contain;
+        bottom: 100px;
+        animation: arrow 3s infinite;
     }
     &__title {
         text-align: center;
